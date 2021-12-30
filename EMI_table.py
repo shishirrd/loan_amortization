@@ -15,9 +15,7 @@ st.sidebar.image('st_logo.png')
 st.sidebar.write("👋 Hi, I’m Shishir! I've recently developed a love for coding.")
 st.sidebar.write("🌱 I’m currently learning Python to augment my job as a senior financial analyst.")
 st.sidebar.write("📫 Reach me @ shishir.rd@gmail.com")
-
-if st.sidebar.button('My Github'):
-    webbrowser.open_new_tab("https://github.com/shishirrd")
+st.sidebar.write("My Github is https://github.com/shishirrd")
 
 st.header("Loan Amortization Table Generator")
 st.write('Tired of online calculators that gave me only the monthly payment amount, I decided to build something more useful for the data-curious.')
