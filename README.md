@@ -1,0 +1,1 @@
+This is a Python-based Streamlit app developed to prepare a loan amortization table based on user inputs of interest rate, loan term & loan amount. 

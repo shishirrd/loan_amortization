@@ -1,0 +1,5 @@
+#enable app in heroku
+streamlit
+pandas
+python-dateutil
+pybase64
