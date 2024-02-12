@@ -47,7 +47,7 @@ balance = principal+monthly_interest-EMI
 # In[9]:
 table = pd.DataFrame(columns=['Month','Monthly Payment', 'Monthly Interest','Principal repaid','Loan Balance'])
 columns = list(table)
-data = pd.DataFrame()
+data = []
 
 # In[10]:
 for i in range(months):
@@ -58,11 +58,11 @@ for i in range(months):
     item = [month, round(EMI), round(monthly_interest), round(principal_payment), round(principal)]
     zipped = zip(columns, item)
     a_dictionary = dict(zipped)
-    data.append(a_dictionary)
+    table = table.append(a_dictionary, ignore_index=True)
 
 # In[11]:
 
-table = table.append(data, True)
+#table = table.append(data, True)
 total_payment = table['Monthly Payment'].sum()
 total_interest = table['Monthly Interest'].sum()
 
