@@ -47,7 +47,7 @@ balance = principal+monthly_interest-EMI
 # In[9]:
 table = pd.DataFrame(columns=['Month','Monthly Payment', 'Monthly Interest','Principal repaid','Loan Balance'])
 columns = list(table)
-data = []
+data = pd.DataFrame()
 
 # In[10]:
 for i in range(months):
