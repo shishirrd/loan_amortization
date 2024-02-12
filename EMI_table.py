@@ -50,19 +50,22 @@ columns = list(table)
 data = []
 
 # In[10]:
+# Iterate through each month
 for i in range(months):
-    monthly_interest = principal*monthly_rate
-    principal_payment = EMI-monthly_interest
+    # Calculate monthly interest and principal payment
+    monthly_interest = principal * monthly_rate
+    principal_payment = EMI - monthly_interest
+    
+    # Update the remaining principal
     principal -= principal_payment
-    month = i+1
-    item = [month, round(EMI), round(monthly_interest), round(principal_payment), round(principal)]
-    zipped = zip(columns, item)
-    a_dictionary = dict(zipped)
-    table = table.append(a_dictionary, ignore_index=True)
+    
+    # Add data for the current month to a list
+    month_data = [i+1, round(EMI), round(monthly_interest), round(principal_payment), round(principal)]
+    
+    # Append the list to the DataFrame
+    table.loc[len(table)] = month_data
 
 # In[11]:
-
-#table = table.append(data, True)
 total_payment = table['Monthly Payment'].sum()
 total_interest = table['Monthly Interest'].sum()
 
