@@ -12,8 +12,8 @@ pd.set_option("display.max_columns", None)
 
 # In[3]:
 st.sidebar.image('st_logo.png')
-st.sidebar.write("👋 Hi, I’m Shishir! I've recently developed a love for coding.")
-st.sidebar.write("🌱 I’m currently learning Python to augment my job as a senior financial analyst.")
+st.sidebar.write("👋 Hi, I’m Shishir! I've always loved tinkering with things.")
+st.sidebar.write("🌱 I’m a Data Scientist at Intel and a Masters in Data Science Student at Northwestern.")
 st.sidebar.write("📫 Reach me @ shishir.rd@gmail.com")
 st.sidebar.write("My Github is https://github.com/shishirrd")
 
